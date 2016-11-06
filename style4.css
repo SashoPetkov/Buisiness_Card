@@ -256,6 +256,65 @@ footer a:last-of-type {
 footer a:last-of-type:hover {
     background-position: -452px -125px;
 }
+            /* PORTFOLIO */
+
+section:nth-of-type(3):hover > .drop2 {
+    padding-left: 1%;
+}
+#portfolio > .drop2 img {
+    vertical-align: top;
+    width: 400px;
+    height: auto;
+}
+#portfolio > .drop2 > a {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+#portfolio > .drop2 img:first-of-type
+#portfolio > .drop2 img:nth-of-type(2) {
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+#portfolio > .drop2 > .title,
+#portfolio > .drop2 > .title2 {
+    display: inline-block;
+    width: 49%;
+}
+#portfolio > .drop2 p,
+#portfolio > .drop2 h3{
+    display: block; 
+    text-align: center;
+    height: 20px;
+}
+#portfolio > .drop2 p {
+    font-size: 0.6em;
+    margin-top: 0;
+}
+#portfolio > .drop2 h3{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#portfolio > .drop2 h3 {
+    color: #00acf1;
+}
+#portfolio > .drop2 .title a,
+#portfolio > .drop2 .title2 a,
+#portfolio > .drop2 .title_none a {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: clickForBig;
+}
+@keyframes clickForBig {
+    0% {color: black;}
+    50% {color: #00acf1;}
+    75% {color: #00acf1; font-size: 1.1em;}
+}
+#wrapper .title_none {
+    display: none;
+}
             /* RESPONCIVE */
 
 @media only screen and (max-width: 1060px) and (min-width: 820px) { 
@@ -307,6 +366,21 @@ footer a:last-of-type:hover {
             /* FOOTER */
     footer > div {
         margin-top: 0.5%;
+    }
+                /* PORTFOLIO */
+    #portfolio > .drop2 .title, 
+    #portfolio > .drop2 .title2 {
+        width: 100% !important;
+    }
+    #portfolio > .drop2 img {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    #wrapper .title_none {
+    display: block;
+    }
+    #portfolio > .drop2 .title2 {
+        display: none;
     }
 }
 
@@ -380,6 +454,21 @@ footer a:last-of-type:hover {
             /* FOOTER */
     footer > div {
         margin-top: 0.5%;
+    }
+                    /* PORTFOLIO */
+    #portfolio > .drop2 .title, 
+    #portfolio > .drop2 .title2 {
+        width: 100% !important;
+    }
+    #portfolio > .drop2 img {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    #wrapper .title_none {
+    display: block;
+    }
+    #portfolio > .drop2 .title2 {
+        display: none;
     }
 }
 @media only screen and (max-width: 540px) and (min-width: 320px) {
@@ -476,63 +565,23 @@ footer a:last-of-type:hover {
     footer {
         padding-bottom: 3%;
     }
-}
-
             /* PORTFOLIO */
-
-section:nth-of-type(3):hover > .drop2 {
-    padding-left: 1%;
-}
-#portfolio > .drop2 img {
-    vertical-align: top;
-    width: 400px;
-    height: auto;
-}
-#portfolio > .drop2 > a {
-    vertical-align: top;
-    width: 100%;
-    height: 100%;
-}
-#portfolio > .drop2 img:first-of-type
-#portfolio > .drop2 img:nth-of-type(2) {
-    width: 300px;
-    height: 400px;
+    #portfolio > .drop2 .title, 
+    #portfolio > .drop2 .title2 {
+        width: 100% !important;
+    }
+    #portfolio > .drop2 img {
+        width: 100% !important;
+        margin-bottom: 20px;
+    } 
+    #wrapper .title_none {
     display: block;
-    margin: 0 auto;
+    }
+    #portfolio > .drop2 .title2 {
+        display: none;
+    }
 }
-#portfolio > .drop2 > .title,
-#portfolio > .drop2 > .title2 {
-    display: inline-block;
-    width: 49%;
-}
-#portfolio > .drop2 p,
-#portfolio > .drop2 h3{
-    display: block; 
-    text-align: center;
-}
-#portfolio > .drop2 p {
-    font-size: 0.6em;
-    margin-top: 0;
-}
-#portfolio > .drop2 h3{
-    font-weight: bold;
-    margin-bottom: 0;
-}
-#portfolio > .drop2 h3 {
-    color: #00acf1;
-}
-#portfolio > .drop2 .title a,
-#portfolio > .drop2 .title2 a {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: clickForBig;
-}
-@keyframes clickForBig {
-    0% {color: black;}
-    25% {color: red;}
-    50% {color: green;}
-    75% {color: yellow;}
-}
+
 
 
 
