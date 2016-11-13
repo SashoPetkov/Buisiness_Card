@@ -310,7 +310,7 @@ section:nth-of-type(3):hover > .drop2 {
 @keyframes clickForBig {
     0% {color: black;}
     50% {color: #00acf1;}
-    75% {color: #00acf1; font-size: 1.1em;}
+    75% {color: #00acf1; /*font-size: 1.1em;*/}
 }
 #wrapper .title_none {
     display: none;
