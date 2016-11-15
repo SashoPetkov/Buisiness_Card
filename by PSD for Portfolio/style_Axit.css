@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 #wrapper {
     width: 100%;
@@ -772,5 +773,581 @@ textarea {
     letter-spacing: 1px;
     color: white;
 }
+.dropdownBars {
+    display: none;
+}
+#GoTop i {
+    display: none;
+}
+            /* RESPONSIVE */
+
+@media only screen and (max-width: 768px) and (min-width: 414px) {
+    #wrapper {
+        font-size: 1.15em;
+    }
+            /* MAIN Container*/
+
+            /* Header */
+    #topHeader > nav {
+        width: 100%;
+    }
+    #topHeader ul {
+        justify-content: space-around;
+    }
+    #topHeader {
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+    }
+
+            /* Main */
+    section, main>header, footer {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    section {
+        flex-direction: column;
+    }
+    main > section:first-of-type article:first-of-type {
+        width: 100%;
+        justify-content: center;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .white {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    main section > article:last-of-type {
+        height: 311.719px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    main section:first-of-type input {
+        margin: 5%;
+        width: 90%;
+    }
+    main section:first-of-type input[type="submit"] {
+        font-size: 1.5em;
+    }
+    main > section:first-of-type {
+        height: auto;
+        background-size: inherit;
+    }
+    main section > article > button, #wrapper > .seventhSection > button,
+    .contacts > form > input[type="submit"] {
+        margin-top: 2%;
+        font-size: 1.5em;
+        width: 200px;
+        height: 50px;
+    }
+
+            /* Footer */
+    main > footer article, main > footer .social {
+        width: 50%;
+    }
+
+        /* SECTION 1 */
+    
+    .fistSection {
+        padding-top: 2%;
+        align-items: center;
+    }
+    .btnOne {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .fistSection .btnOne > a {
+        border-radius: 5px;
+        margin-left: 1px;
+    }
+    #wrapper > section article {
+        width: 90%;
+        text-align: center;
+    }
+    #wrapper > section button {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    } 
+    #wrapper > section > img:last-child {
+        margin: 4% auto;
+        width: auto;
+    }
+    
+        /* Section 2 */
+
+    #wrapper .barPicture {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        width: 80%;
+        height: 350px;
+    }
+    .asideDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .asideDiv > i {
+        margin-right: 0;
+    }
+    .orange {
+        margin: 3% auto;
+    }
+
+        /* Section 3 */
+    .thirdSection {
+        justify-content: space-around;
+        height: 670px;
+    }
+    #wrapper .thirdSection .barPicture {
+        margin: 0;
+    }    
+    .thirdSection .barPicture a {
+        width: 100%;
+        height: calc(100% - 5%);
+    }
+    .asideDiv p {
+        width: 100%;
+    }
+
+        /* Section 4 */
+
+    .fourthSection {
+        height: auto;
+    }
+    .fourthSection > section {
+        display: block;
+    }
+    .fourthSection > .main {
+        flex-wrap: wrap;
+    }
+    #wrapper > section:nth-of-type(4) article {
+        width: 49%;
+        vertical-align: top;
+    }
+        
+        /* Section 5 */
+    .fifthSection {
+        height: auto;
+    }    
+
+    .fifthSection > section:last-of-type {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #wrapper .fifthSection > section:last-of-type > 
+    article:last-of-type {
+        margin-top: 3%;
+    }  
+    #wrapper > .fifthSection > section > article {
+        width: 49%;
+    }
+    .fifthSection > section:last-of-type .dropD3 {
+        display: block;
+    }
+
+        /* Section 6 */
+    .sixthSection {
+        height: auto;
+    }
+    #wrapper .sixthSection > .main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #wrapper .sixthSection > .main > article {
+        width: 49%;
+    }
+    #wrapper .sixthSection > .main > article:last-of-type {
+        margin-top: 3%;
+    }
+    
+        /* Section 7 */
+    
+    .seventhSection {
+        background-position: 0 -97px;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    
+        /* Section 8 */
+
+    .contacts > form > div > input {
+        width: 100%;
+    }
+    .contacts > form > div {
+        width: 90%;
+    }
+    .contacts > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    textarea {
+        width: 90%;
+        text-indent: 15px;
+        font-weight: lighter;
+    }
+    .contacts > form > input[type="submit"] {
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+    #wrapper {
+        font-size: 1.15em;
+    }
+            /* MAIN Container*/
+
+            /* Header */
+    #topHeader > nav {
+        width: 100%;
+    }
+    #topHeader ul {
+        justify-content: space-around;
+    }
+    #topHeader ul > li {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid rgba(255, 139, 56, 1);
+        height: 32px;
+    }
+    #topHeader ul > li:hover {
+        border: 1px solid rgba(255, 139, 56, 0.4);
+    }
+    #topHeader {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    #wrapper .orange, #wrapper  .white {
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    #topHeader > nav {
+        display: none;
+    }
+    #topHeader > h1 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+            /* Main */
+    section, main > header, footer {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    section {
+        flex-direction: column;
+    }
+    main > section:first-of-type article:first-of-type {
+        width: 100%;
+        justify-content: center;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .white {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    main section > article:last-of-type {
+        height: 311.719px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    main section:first-of-type input {
+        margin: 10%;
+        width: 89%;
+        margin-left: 5%;
+    }
+    main section:first-of-type input[type="submit"] {
+        font-size: 1.5em;
+    }
+    main > section:first-of-type {
+        height: auto;
+        background-size: inherit;
+    }
+    main section > article > button, #wrapper > .seventhSection > button,
+    .contacts > form > input[type="submit"] {
+        margin-top: 2%;
+        font-size: 1.5em;
+        width: 200px;
+        height: 50px;
+    }
+    main > section h1:last-of-type {
+        text-align: center;
+    }
+    main > section {
+        background-position: -290px 0;
+        background-size: auto 751px !important;
+    }
+    main p {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        text-align: center !important;
+    }
+    main section > article > button {
+        margin-bottom: 6%;
+    }
+
+            /* Footer */
+
+    main > footer {
+        display: none;
+    }
+
+        /* SECTION 1 */
+    
+    .fistSection {
+        padding-top: 2%;
+        align-items: center;
+    }
+    .btnOne {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .fistSection .btnOne > a {
+        border-radius: 5px;
+        margin-left: 1px;
+        width: 100%;
+        margin-top: 2px;
+        height: 60px;
+        line-height: 60px;
+    }
+    #wrapper > section article {
+        width: 90%;
+        text-align: center;
+    }
+    #wrapper > section button {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+    } 
+    #wrapper > section > img:last-child {
+        margin: 4% auto;
+        width: auto;
+    }
+    
+        /* Section 2 */
+
+    #wrapper .barPicture {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        width: 98%;
+        height: 200px;
+    }
+    .asideDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .asideDiv > i {
+        margin-right: 0;
+    }
+    .orange {
+        margin: 3% auto;
+    }
+    .asideDiv > p {
+        width: 100%;
+    }
+
+        /* Section 3 */
+    .thirdSection {
+        justify-content: flex-start;
+        padding-bottom: 120px;
+        padding-top: 20px;
+        height: 540px;
+
+    }
+    #wrapper .thirdSection .barPicture {
+        margin: 0;
+    }    
+    .thirdSection .barPicture a {
+        width: 100%;
+        height: calc(100% - 5%);
+    }
+        /* Section 4 */
+    .fourthSection {
+        height: auto;
+    }
+    .fourthSection > section {
+        display: block;
+    }
+    .fourthSection > .main {
+        flex-wrap: wrap;
+    }
+    #wrapper > section:nth-of-type(4) article {
+        width: 100%;
+        vertical-align: top;
+    }
+    .fourthSection > section {
+        margin-top: 20px;
+    }
+        
+        /* Section 5 */
+    .fifthSection {
+        height: auto;
+    }    
+
+    .fifthSection > section:last-of-type {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #wrapper .fifthSection > section:last-of-type > 
+    article:last-of-type {
+        margin-top: 3%;
+    }  
+    #wrapper > .fifthSection > section > article {
+        width: 100%;
+    }
+    .fifthSection > section:last-of-type .dropD3 {
+        display: block;
+    }
+
+        /* Section 6 */
+    .sixthSection {
+        height: auto;
+    }
+    #wrapper .sixthSection > .main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #wrapper .sixthSection > .main > article {
+        width: 98%;
+    }
+    #wrapper .sixthSection > .main > article:last-of-type {
+        margin-top: 3%;
+    }
+    .sixthSection > section > h1 {
+        text-align: center;
+    }
+    
+        /* Section 7 */
+    
+    .seventhSection {
+        background-position: 563px -252px;
+        background-size: inherit;
+        text-align: center;
+    }
+    
+        /* Section 8 */
+
+    .contacts > form > div > input {
+        width: 100%;
+    }
+    .contacts > form > div {
+        width: 90%;
+    }
+    .contacts > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    textarea {
+        width: 90%;
+        text-indent: 15px;
+        font-weight: lighter;
+    }
+    .contacts > form > input[type="submit"] {
+        margin-top: 15px;
+    }
+    .contacts {
+        text-align: center;
+    }
+        /* FOOTER */
+    
+    #wrapper > .lastFooter{
+        height: auto;
+    }
+    #wrapper > .lastFooter ul {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #wrapper > .lastFooter li {
+        height: 20px;
+        width: auto;
+        margin: 20px 10px;
+        -ms-transform: scale(0.8,0.8); /* IE 9 */
+        -webkit-transform: scale(0.8,0.8); /* Safari */
+        transform: scale(0.8,0.8); /* Standard syntax */
+    }
+    #wrapper > .lastFooter a {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+        /* Dropdown BARS */
+    #wrapper #dropdownBars {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        /*background-color: white;*/
+        position: absolute;
+        top: 17px;
+        left: 12px;
+        background-image: url("bars/myBars1.png");
+        background-position: 0 5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside:hover + #mainNavigation { 
+        display: flex;
+        flex-direction: column;       
+    }
+    #wrapper #dropdownBars:hover {
+        opacity: 0.7;
+    }
+    aside:hover + #mainNavigation ul {  
+        flex-direction: column;
+        align-items: center;
+    }
+    aside{
+        height: 100%;
+        width: 100%;
+    } 
+    #GoTop {
+        display: block;
+        opacity: 0.3;
+        position: fixed;
+        right: 10px;
+        bottom: 155px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgba(255, 139, 56, 1);
+    }
+    #GoTop i {
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        color: rgba(255, 139, 56, 1);
+    }
+    #GoTop:hover {
+        opacity: 0.6;
+    }
+}
+
 
 
