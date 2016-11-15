@@ -776,8 +776,25 @@ textarea {
 .dropdownBars {
     display: none;
 }
+#GoTop {
+    display: block;
+    opacity: 0.3;
+    position: fixed;
+    right: 10px;
+    bottom: 155px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255, 139, 56, 1);
+}
 #GoTop i {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 2px;
+    color: rgba(255, 139, 56, 1);
+}
+#GoTop:hover {
+    opacity: 0.6;
 }
             /* RESPONSIVE */
 
@@ -998,7 +1015,10 @@ textarea {
     .contacts > form > input[type="submit"] {
         margin-top: 15px;
     }
-
+    #GoTop i {
+        bottom: -9px;
+        left: 0;
+    }
 }
 
 
@@ -1328,24 +1348,9 @@ textarea {
         height: 100%;
         width: 100%;
     } 
-    #GoTop {
-        display: block;
-        opacity: 0.3;
-        position: fixed;
-        right: 10px;
-        bottom: 155px;
-        width: 50px;
-        height: 50px;
-        border: 2px solid rgba(255, 139, 56, 1);
-    }
     #GoTop i {
-        display: block;
-        position: absolute;
-        bottom: -10px;
-        color: rgba(255, 139, 56, 1);
-    }
-    #GoTop:hover {
-        opacity: 0.6;
+        bottom: -9px;
+        left: 0;
     }
 }
 
